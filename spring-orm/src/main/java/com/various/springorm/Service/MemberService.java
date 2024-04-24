@@ -3,10 +3,13 @@ package com.various.springorm.Service;
 import com.various.springorm.Domain.Member;
 import com.various.springorm.Repository.MemberRepository;
 import com.various.springorm.Repository.MemoryMemberRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
 
+@Service
 public class MemberService {
 
 //    private final MemberRepository memberRepository = new
@@ -14,6 +17,8 @@ public class MemberService {
 
     // Dependency Injection이 가능하도록 수정!
     private final MemberRepository memberRepository;
+
+    @Autowired
     public MemberService(MemberRepository memberRepository) {
         this.memberRepository = memberRepository;
     }
