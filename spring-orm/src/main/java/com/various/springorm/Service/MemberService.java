@@ -9,7 +9,7 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 import java.util.Optional;
 
-@Service
+// @Service
 public class MemberService {
 
 //    private final MemberRepository memberRepository = new
@@ -18,7 +18,7 @@ public class MemberService {
     // Dependency Injection이 가능하도록 수정!
     private final MemberRepository memberRepository;
 
-    @Autowired
+    // @Autowired
     public MemberService(MemberRepository memberRepository) {
         this.memberRepository = memberRepository;
     }
