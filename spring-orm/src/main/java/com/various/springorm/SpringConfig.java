@@ -1,6 +1,7 @@
 package com.various.springorm;
 
 import com.various.springorm.Repository.JDBCMemberRepository;
+import com.various.springorm.Repository.JDBCTemplateMemberRepository;
 import com.various.springorm.Repository.MemberRepository;
 import com.various.springorm.Repository.MemoryMemberRepository;
 import com.various.springorm.Service.MemberService;
@@ -25,6 +26,7 @@ public class SpringConfig {
     @Bean
     public MemberRepository memberRepository() {
         // return new MemoryMemberRepository();
-        return new JDBCMemberRepository(dataSource);
+        // return new JDBCMemberRepository(dataSource);
+        return new JDBCTemplateMemberRepository(dataSource);
     }
 }
