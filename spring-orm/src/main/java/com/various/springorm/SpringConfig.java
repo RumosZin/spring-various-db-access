@@ -21,7 +21,7 @@ public class SpringConfig {
 
     @Bean
     public MemberService memberService() {
-        return new MemberService(memberRepository());
+        return new MemberService(memberRepository);
     }
 
     // Not necessary in Spring Data JPA, automatically registered Spring Bean
