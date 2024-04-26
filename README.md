@@ -34,3 +34,31 @@
     - mockito : 목 라이브러리
     - assertj : 테스트 코드 작성에 도움을 주는 라이브러리
     - spring-test : 스프링 통합 테스트 지원
+
+## Spring Database Access Technology
+
+### JDBC
+
+JDBC(Java Database Connectivity) : Java 기반 애플리케이션의 데이터를 데이터베이스에 저장 및 업데이트하거나, 저장된 데이터를 Java에서 사용할 수 있도록 하는 자바 API
+
+Commit : 35c5f0a
+
+### JDBCTemplate
+
+JDBC의 단점인 반복적인 코드를 대부분 제거해주는 장점을 가진 Spring에서 제공하는 template이다. **SQL은 직접 작성해야 한다.**
+
+Commit : 5f1bd74
+
+### Spring JPA
+
+JPA(Java Persistence API) : Java ORM 기술에 대한 API 표준 명세, Java 어플리케이션에서 관계형 데이터베이스를 사용하는 방식을 정의한 **인터페이스**
+
+Hibernate, OpenJPA 등이 JPA를 구현했다.
+
+Commit : c0b0fa8
+
+### Spring Data JPA
+
+JPA 기반 애플리케이션 개발을 간편하게 만드는 라이브러리/프레임워크이다.
+
+Commit : ec0ce10
