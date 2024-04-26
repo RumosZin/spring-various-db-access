@@ -37,6 +37,8 @@
 
 ## Spring Database Access Technology
 
+📄 [[Spring/Database] JDBC와 JDBCTemplate](https://rumoszin.github.io/posts/spring-database-jdbc-template/)
+
 ### JDBC
 
 JDBC(Java Database Connectivity) : Java 기반 애플리케이션의 데이터를 데이터베이스에 저장 및 업데이트하거나, 저장된 데이터를 Java에서 사용할 수 있도록 하는 자바 API
@@ -48,6 +50,10 @@ Commit : 35c5f0a
 JDBC의 단점인 반복적인 코드를 대부분 제거해주는 장점을 가진 Spring에서 제공하는 template이다. **SQL은 직접 작성해야 한다.**
 
 Commit : 5f1bd74
+
+<br>
+
+📄 [[Spring/Database] Spring JPA와 Spring Data JPA](https://rumoszin.github.io/posts/spring-database-jpa/)
 
 ### Spring JPA
 
